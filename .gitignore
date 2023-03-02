@@ -1,1 +1,3 @@
 greenhouse-key-pair.pem
+connect_to_aws_instance.ps1
+*.lnk
