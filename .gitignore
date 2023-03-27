@@ -4,3 +4,4 @@ connect_to_aws_instance.ps1
 ec2-user@ec2-54-176-246-75.us-west-1.compute.amazonaws.com
 howto.txt
 greenhouse.sql
+node_modules
