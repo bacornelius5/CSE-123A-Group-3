@@ -91,13 +91,13 @@ const styles = StyleSheet.create({
     flex: 0.6,
     width: 500,
     height: 500,
-    borderRadius: 3,
+    borderRadius: 5,
     backfaceVisibility: 'visible',
     shadowColor: '#000',
     shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.3,
     shadowRadius: 3,
-    backgroundColor: '#fff'
+    backgroundColor: 'inherit'
   },
   text: {
     color: '#a6accd'
@@ -193,7 +193,7 @@ export const ChartCard = ({data = 0}) => (
             legend: '',
             legendOffset: -12,
       }}
-      colors={{ scheme: 'dark2' }}
+      colors={{ scheme: 'accent' }}
         curve={'monotoneX'}
         enablePointLabel={true}
         pointSymbol={CustomSymbol}
