@@ -1,7 +1,6 @@
 import { ResponsiveLine } from '@nivo/line'
 import { StyleSheet, Text, View } from 'react-native'
 
-
 const theme = {
   "background": "#0f111a",
   "textColor": "#c0caf5",
@@ -68,7 +67,7 @@ const theme = {
           "position": "absolute",
           "left": '5px',
       "top": '5px',
-      "z-index": 3,
+      "zIndex": 3,
       "height": 'auto',
           "width": 'auto',
           "background": "#0f111a",
@@ -118,7 +117,7 @@ const commonProperties = {
 const CustomSymbol = ({ size, color, borderWidth, borderColor }) => (
   <g>
 
-      <circle fill="#fff" fill-opacity="30%" r={size / 5} strokeWidth={borderWidth} stroke={borderColor} />
+      <circle fill="#fff" fillOpacity="30%" r={size / 5} strokeWidth={borderWidth} stroke={borderColor} />
 
       <circle
 

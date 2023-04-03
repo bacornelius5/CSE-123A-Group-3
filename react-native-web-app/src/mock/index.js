@@ -1,0 +1,1 @@
+export * as MoistureData from './moisture_sensor_mock_data.csv'
