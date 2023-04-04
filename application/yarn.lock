@@ -4152,7 +4152,7 @@ expo-linking@~4.0.1:
     qs "^6.11.0"
     url-parse "^1.5.9"
 
-expo-modules-autolinking@1.1.2:
+expo-modules-autolinking@1.1.2, expo-modules-autolinking@>=0.8.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/expo-modules-autolinking/-/expo-modules-autolinking-1.1.2.tgz#a81c65c63bd281922410c6d8c3ad6255b6305246"
   integrity sha512-oOlkAccVnHwwR5ccvF/F/x4Omj9HWzSimMUlIVz0SVGdNBEqTPyn0L/d4uIufhyQbEWvrarqL8o5Yz11wEI0SQ==
@@ -4181,7 +4181,7 @@ expo-pwa@0.0.124:
     commander "2.20.0"
     update-check "1.5.3"
 
-expo-router@^1.2.0:
+expo-router@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/expo-router/-/expo-router-1.4.3.tgz#8562ad52b9d565ccebba9852a5ad23d3d6acec69"
   integrity sha512-mNjvzEsZfDAZYKAhg2co9WbHCq26pa6SOK0mYxRqtbUdl2wMxdE5IJzZupd56zw6q+M6l///7OCLDhBG5nCB7g==

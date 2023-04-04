@@ -46,10 +46,11 @@ export default function SignIn () {
   )
   return (
         <View style={{alignSelf: 'center', width: 'auto', flexDirection: 'column', gap: 10, columnGap: 50, borderRadius: 10, backgroundColor: '#0f111a', padding: 20 }}>
-          <Text style={{alignSelf: 'center' ,...styles.title}}>Login</Text>
-          <TextInput style={styles.text.input} autoComplete='current-password' autoFocus={true} inputMode='email' placeholderTextColor={'grey'} placeholder={`username or email`}></TextInput>
-          <TextInput style={styles.text.input} placeholderTextColor={'grey'} placeholder={`password`}></TextInput>
-          <Text style={{alignSelf: 'center',color: colors.text }} onPress={() => signIn()}>Submit</Text>
+        <Text style={{alignSelf: 'center' ,...styles.title}}>Login</Text>
+        <TextInput style={styles.text.input} autoComplete='current-password' autoFocus={true} inputMode='email' placeholderTextColor={'grey'} placeholder={`username or email`}></TextInput>
+        <TextInput style={styles.text.input} placeholderTextColor={'grey'} placeholder={`password`}></TextInput>
+      <Text style={{alignSelf: 'center',color: colors.text }} onPress={() => signIn()}>Submit</Text>
         </View>  
+    
   )
 }

@@ -7,8 +7,9 @@ export default function Background ( { children } ) {
   const {colors} = useTheme()
   const styles = StyleSheet.create( {
     container: {
-      backgroundColor: colors.background,
-      flex: 1,
+      backgroundColor: radial-gradient(ellipse at top, '#0F111A', transparent),            radial-gradient(ellipse at bottom, '#00000050', transparent);
+    flex: 1,
+      
     },
   } )
   return (
@@ -17,3 +18,4 @@ export default function Background ( { children } ) {
     </LinearGradient>
   )
 }
+
