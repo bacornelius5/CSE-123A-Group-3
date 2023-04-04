@@ -1,41 +1,21 @@
+import { useTheme } from '@react-navigation/native'
 import { Link, Stack } from 'expo-router'
 import { useState } from 'react'
-import { Button, Image, Text, View } from 'react-native'
-
-function LogoTitle () {
-  return (
-    <Image style={{ width: 50, height: 50 }}
-      source={{ uri: '/logo.png' }}
-    />
-  )
-}
+import { Text, View } from 'react-native'
 
 export default function Home () {
-  const [count, setCount] = useState(0)
+  const [ count, setCount ] = useState( 0 )
+  const { colors } = useTheme()
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Stack.Screen
-        options={{
-          title: 'My Home Title',
-          headerStyle: { backgroundColor: "#f4511e" },
-          headerTintColor: "#fff",
-          headerTitleStyle: {
-            fontWeight: "bold",
-          },
-          headerTitle: ( props ) => <LogoTitle {...props} />,
-          headerRight: () => (
-            <Button
-              onPress={() => setCount( ( c ) => c + 1 )}
-              title='Update count'
-            />
-          ),
-        }}
-      />
-      <Text>Home Screen</Text>
-      <Link href={{ pathname: 'details', params: { name: 'Pollo' } }}>
+
+      <View style={{flex: 1, height: 'auto', width: 'auto', justifyContent: "center", alignItems: "center", }}>
+      {/* <Stack.Screen options={{ title: null }} /> */}
+      <Text style={{color: colors.text}}>Home Screen</Text>
+      <Link style={{color: colors.text}} href={{ pathname: 'details', params: { name: 'Pollo' } }}>
         Go to Details
       </Link>
-      <Text>Count: {count}</Text>
-    </View>
+          <Text style={{color: colors.text}}>Count: {count}</Text>
+      </View>
+  
   )
 }
