@@ -30,7 +30,7 @@ function Header ( { title = 'Grow Things' } ) {
         </Text>
       </View>
       <View style={{width: 'auto', flexDirection: 'row', gap: 10, justifyContent: "flex-end", alignContent: 'flex-end'}}>
-      {routes.map( ( { pathname, label } ) => <Link style={{ fontSize: 30, fontWeight: 'normal', color: colors.text }} href={{ pathname: pathname }} >{label}</Link> )}
+        {routes.map( ( { pathname, label } ) => <Link key={pathname} style={{ fontSize: 30, fontWeight: 'normal', color: colors.text }} href={{ pathname: pathname }} >{label}</Link> )}
       </View>
       </View>
   )
@@ -49,7 +49,7 @@ export default function Root () {
               color: 'white'
             },
           }}>
-            <Stack.Screen name="(auth)/sign-in" title={null} />
+            <Stack.Screen name="sign-in" title={null} options={{presentation: 'modal'}} />
             <Stack.Screen name="home" title={null}/>
           </Stack>
         </Background>

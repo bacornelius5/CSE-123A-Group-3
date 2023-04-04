@@ -4,6 +4,7 @@
     "web": {
       "bundler": "metro"
     },
+    "userInterfaceStyle": "automatic",
     "name": "application",
     "slug": "application"
   }
