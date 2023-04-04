@@ -1,0 +1,13 @@
+{
+  "typescript.autoClosingTags": false,
+  "typescript.check.npmIsInstalled": false,
+  "typescript.format.enable": false,
+  "typescript.format.insertSpaceAfterCommaDelimiter": false,
+  "emmet.showSuggestionsAsSnippets": true,
+  "reactSnippets.settings.languageScopes": "javascript,javascriptreact",
+  "reactSnippets.settings.prettierEnabled": true,
+  "typescript.suggest.classMemberSnippets.enabled": false,
+  "typescript.suggest.objectLiteralMethodSnippets.enabled": false,
+  "typescript.validate.enable": false,
+  "reactSnippets.settings.typescript": false
+}

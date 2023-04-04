@@ -64,7 +64,6 @@ const theme = {
   "tooltip": {
     "container": {
           "flex": 1,
-          "position": "absolute",
           "left": '5px',
       "top": '5px',
       "zIndex": 3,
